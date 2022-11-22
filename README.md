@@ -29,12 +29,12 @@ flowchart LR;
 Comme dans la majorité des projets WEB, Nous choisirons d'utiliser trois langages pour le front-end qui sont les suivants: HTML, CSS, JavaScript
 
 Ci-dessous, quelques exercices pour s'entraîner en CSS:
-https://flexboxfroggy.com/#fr
-https://flukeout.github.io/
-https://cssgridgarden.com/#fr
+- https://flexboxfroggy.com/#fr
+- https://flukeout.github.io/
+- https://cssgridgarden.com/#fr
 
 Et LE site pour apprendre HTML et JavaScript:
-https://www.w3schools.com/
+- https://www.w3schools.com/
 
 ### 2) Le back-end
 
@@ -47,7 +47,7 @@ L'avantage de Node.js ?
 Node.js est très flexible (permet de faire un peu tout et assez bien), n'a pas besoin de navigateur WEB pour fonctionner même si les scripts sont écrits en JavaScript, et permet l'utilisation du gestionnaire de paquets npm qui permet d'importer des modules (ou librairies) déjà écrites par d'autre développeurs.
 
 Afin d'apprendre le TypeScript:
-https://learn.microsoft.com/en-us/training/paths/build-javascript-applications-typescript/
+- https://learn.microsoft.com/en-us/training/paths/build-javascript-applications-typescript/
 
 ### 3) Le routeur
 
