@@ -8,7 +8,7 @@ Tout d'abord, effectuons une présentation rapide d'un environnement web.
 En général, un environnement web est composé de trois éléments essentiels: le back-end, le front-end et le routeur.
 - Le back-end est la partie "serveur" de l'environnement. Celui-ci permet de récolter des données, d'en enregistrer et de les partager avec un ou plusieurs clients. Le back-end peut-être codé en divers langages tel que JavaScript, PHP, Python ...
 - Le front-end est la partie "interface utilisateur". C'est un ensemble de composants dynamiques ou statiques avec lesquels l'utilisateur pourra intéragir ou non. En WEB, le front-end est lu, interprété, affiché et managé par les navigateurs WEB. Enfin, il est composé de trois languages différents: un langage de description du contenu (HTML) (Qu'est ce que je vais avoir sur ma page WEB ?), un langage de description du style (CSS) (Comment je vais afficher mon contenu ?) et un langage de programmation de scripts (JavaScript) (Qu'est-ce que je vais faire de mon contenu ?)
-- Le routeur est l'élément qui va recueillir les requêtes des utilisateurs et leur transmettre le front-end. Celui-ci est présent sur une machine qui possède une adresse IP (adresse qui permet de localiser l'endroit vers lequel il faut envoyer les requêtes) et il communique au travers d'un port (une porte par laquelle il a les permissions de faire passer des informations)
+- Le routeur est l'élément qui va receuillir les requêtes des utilisateurs et leur transmettre le front-end. Celui-ci est présent sur une machine qui possède une adresse IP (adresse qui permet de localiser l'endroit vers lequel il faut envoyer les requêtes) et il communique au travers d'un port (une porte par laquelle il a les permissions de faire passer des informations)
 
 Example:
 ```mermaid
@@ -26,7 +26,7 @@ flowchart LR;
 
 ### 1) Le front-end
 
-Comme dans la majorité des projets WEB, Nous choisirons d'utiliser trois langages pour le front-end qui sont les suivants: HTML, CSS, JavaScript
+Comme dans la majorité des projets WEB, Nous choisirons d'utiliser trois langages pour le front-end qui sont les suivants: HTML, CSS, JavaScript.
 
 Ci-dessous, quelques exercices pour s'entraîner en CSS:
 - https://flexboxfroggy.com/#fr
@@ -35,6 +35,11 @@ Ci-dessous, quelques exercices pour s'entraîner en CSS:
 
 Et LE site pour apprendre HTML et JavaScript:
 - https://www.w3schools.com/
+
+Créer des interfaces, ce n'est pas uniquement savoir coder. C'est aussi connaître et appliquer les règles de UI/UX design (ergonomie & esthétisme).
+- <a href="https://youtu.be/RqCJRrseD1k?t=1055">Les 5 fondamentaux de l'UI/UX design 🎞️</a>
+- <a href="https://designcourse.com/app/course/ueye">Un jeu pour apprendre l'UI/UX design 🎲</a>
+- <a href="https://www.youtube.com/watch?v=YiLUYf4HDh4">*Optionnel :* Apprendre à utiliser le logiciel de maquettes Figma 🎞️</a>
 
 ### 2) Le back-end
 
