@@ -19,8 +19,8 @@ flowchart LR;
     subgraph Machine 2
     B(Web Browser)
     end
-    A(Router)--Send front-end-->B(Web Browser);
-    B(Web Browser)--Send request-->A(Router);
+    B(Web Browser)--1.Send request-->A(Router);
+    A(Router)--2.Send front-end-->B(Web Browser);
     C(Back-End server)<--Communicate-->B(Web Browser);
 ```
 
