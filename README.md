@@ -81,7 +81,7 @@ Tout d'abord il faut s'exercer en apprenant les langages HTML, CSS et JavaScript
 
 5) Compiler et démarrer le serveur
 
-> ```npm run dev```
+> ```npm run dev``` OU ```sudo bash node_modules/.bin/tsc``` + ```npm run start```
 
 6) Accéder au front-end
 
