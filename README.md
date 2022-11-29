@@ -7,8 +7,8 @@ Bienvenue sur ce repository qui vous permettra de vous exercer et d'acquérir de
 Tout d'abord, effectuons une présentation rapide d'un environnement web.
 En général, un environnement web est composé de trois éléments essentiels: le back-end, le front-end et le routeur.
 - Le back-end est la partie "serveur" de l'environnement. Celui-ci permet de récolter des données, d'en enregistrer et de les partager avec un ou plusieurs clients. Le back-end peut-être codé en divers langages tel que JavaScript, PHP, Python ...
-- Le front-end est la partie "interface utilisateur". C'est un ensemble de composants dynamiques ou statiques avec lesquels l'utilisateur pourra intéragir ou non. En WEB, le front-end est lu, interprété, affiché et managé par les navigateurs WEB. Enfin, il est composé de trois languages différents: un langage de description du contenu (HTML) (Qu'est ce que je vais avoir sur ma page WEB ?), un langage de description du style (CSS) (Comment je vais afficher mon contenu ?) et un langage de programmation de scripts (JavaScript) (Qu'est-ce que je vais faire de mon contenu ?)
-- Le routeur est l'élément qui va receuillir les requêtes des utilisateurs et leur transmettre le front-end. Celui-ci est présent sur une machine qui possède une adresse IP (adresse qui permet de localiser l'endroit vers lequel il faut envoyer les requêtes) et il communique au travers d'un port (une porte par laquelle il a les permissions de faire passer des informations)
+- Le front-end est la partie "interface utilisateur". C'est un ensemble de composants dynamiques ou statiques avec lesquels l'utilisateur pourra interagir ou non. En WEB, le front-end est lu, interprété, affiché et managé par les navigateurs WEB. Enfin, il est composé de trois languages différents: un langage de description du contenu (HTML) (Qu'est ce que je vais avoir sur ma page WEB ?), un langage de description du style (CSS) (Comment je vais afficher mon contenu ?) et un langage de programmation de scripts (JavaScript) (Qu'est-ce que je vais faire de mon contenu ?)
+- Le routeur est l'élément qui va recueillir les requêtes des utilisateurs et leur transmettre le front-end. Celui-ci est présent sur une machine qui possède une adresse IP (adresse qui permet de localiser l'endroit vers lequel il faut envoyer les requêtes) et il communique au travers d'un port (une porte par laquelle il a les permissions de faire passer des informations)
 
 Example:
 ```mermaid
@@ -27,6 +27,7 @@ flowchart LR;
 ### 1) Le front-end
 
 Comme dans la majorité des projets WEB, Nous choisirons d'utiliser trois langages pour le front-end qui sont les suivants: HTML, CSS, JavaScript.
+Pour faciliter le développement nous utiliserons la librairie ejs. Cette librairie va permettre de créer des fichiers .ejs qui remplacent les fichiers .html. Cela aura pour but de pouvoir inclure des fichiers .ejs à l'intérieur d'autres et donc de développer "en composants".
 
 Ci-dessous, quelques exercices pour s'entraîner en CSS:
 - https://flexboxfroggy.com/#fr
@@ -60,8 +61,8 @@ Dans Node.js, nous pouvons directement intégrer un routeur. Celui qui a été c
 
 ## Et maintenant ?
 
-Il faut décider sur quoi travailler: soit le front-end, soit le back-end. Heureusement, le routeur Express est déjà codé de A à Z, il suffit donc de l'implémenter dans notre scipt Node.js.
-Tout d'abord il faut s'exercer en apprenant les langages HTML, CSS et JavaScript (C'est la BASE du WEB). Inutile de connaître toutes les balises HTML ou tous les attributs CSS, il suffit de comprendre le fonctionnement et d'être capable de réaliser un site web statique par soi-même ( un paragraphe, une grille comportant plusieurs couleurs et un bouton intéractif en JavaScript suffiront ;-) )
+Il faut décider sur quoi travailler: soit le front-end, soit le back-end. Heureusement, le routeur Express est déjà codé de A à Z, il suffit donc de l'implémenter dans notre script Node.js.
+Tout d'abord il faut s'exercer en apprenant les langages HTML, CSS et JavaScript (C'est la BASE du WEB). Inutile de connaître toutes les balises HTML ou tous les attributs CSS, il suffit de comprendre le fonctionnement et d'être capable de réaliser un site web statique par soi-même ( un paragraphe, une grille comportant plusieurs couleurs et un bouton interactif en JavaScript suffiront ;-) )
 
 ## Comment utiliser le projet d'exemple de ce repository ?
 
@@ -75,7 +76,7 @@ Tout d'abord il faut s'exercer en apprenant les langages HTML, CSS et JavaScript
 
 > ```git clone [url du repository]```
 
-4) Installer les dependances du projet
+4) Installer les dépendances du projet
 
 > ```npm install```
 
@@ -95,18 +96,19 @@ Le projet Node.js du repository est construit de la manière suivante:
  ```
 ├── dist
 │   ├── app.js
-│   ├── app.js.map
 ├── node_modules
 ├── public
-│   ├── api
 │   ├── style
 │   │   ├── *.css
 │   ├── images
 │   ├── script
 │   │   ├── *.js
-│   ├── index.html
 ├── src
 │   ├── app.ts
+├── views
+│   ├── partials
+│   │   ├── navbar.ejs
+│   ├── index.ejs
 ├── .env
 ├── package.json
 ├── package-lock.json 
@@ -117,13 +119,15 @@ Le projet Node.js du repository est construit de la manière suivante:
 
 ```node_modules```: répertoire des dépendances du projet archivées
 
-```public```: répertoire du front-end
-
-```public/index.html```: page web principale
+```public```: répertoire des éléments front-end statiques
 
 ```src/app.ts```: script du serveur back-end (en TypeScript) et implémentation du routeur Express
 
-```.env```: variables d'environnement (globales au projet)
+```views/index.html```: page web principale
+
+```views/partial```: dossier des composants des pages web
+
+```.env```: variables d'environnement (globales au serveur)
 
 ```package.json```: description et liste des dépendances du projet
 
