@@ -24,6 +24,15 @@ app.get('/', (req, res) => {
 app.get('/', (req, res) => {
     res.render('index.ejs');
 });
+app.get('/news', (req, res) => {
+    res.render('news.ejs');
+});
+app.get('/contact', (req, res) => {
+    res.render('contact.ejs');
+});
+app.get('/about', (req, res) => {
+    res.render('about.ejs');
+});
 // When the server is loaded and and starts listening
 app.listen(port, () => {
     return console.log(`Express is listening at http://localhost:${port}`);
