@@ -27,19 +27,19 @@ app.get('/', (req, res) => {
 
 app.get('/', (req: Request, res: Response) => {
 	res.render('index.ejs')
-});
+})
 
 app.get('/news', (req: Request, res: Response) => {
 	res.render('news.ejs')
-});
+})
 
 app.get('/contact', (req: Request, res: Response) => {
 	res.render('contact.ejs')
-});
+})
 
 app.get('/about', (req: Request, res: Response) => {
 	res.render('about.ejs')
-});
+})
 
 // When the server is loaded and and starts listening
 app.listen(port, () => {
