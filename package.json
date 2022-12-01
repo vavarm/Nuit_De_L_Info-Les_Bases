@@ -1,5 +1,5 @@
 {
-    "name": "nuit_de_linfo",
+    "name": "lebrongames",
     "version": "1.0.0",
     "description": "Un site web développé pour la nuit de l'info 2022",
     "main": "src/app.ts",
